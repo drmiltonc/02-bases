@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <ul class="nav nav-pills">
+        <li>
+            <a [routerLink]="['/']" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }" class="nav-link">Home</a>
+        </li>
+        <li>
+            <a [routerLink]="['/hero']" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }" class="nav-link">Hero</a>
+        </li>
+        <li>
+            <a [routerLink]="['/dragon-ball']" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }" class="nav-link">Dragon Ball</a>
+        </li>
+    </ul>
+  </div>
+</nav>

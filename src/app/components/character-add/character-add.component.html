@@ -1,0 +1,20 @@
+<div class="mb-3">
+  <h3>{{ newCharacterLabel }}</h3>
+  <input 
+    type="text" 
+    class="form-control" 
+    placeholder="Name" 
+    [ngModel]="characterName()" 
+    (ngModelChange)="characterName.set($event)">
+  <input 
+    type="number" 
+    class="form-control mt-2" 
+    placeholder="Power" 
+    [ngModel]="characterPower()" 
+    (ngModelChange)="characterPower.set($event)">
+  <button 
+    class="btn btn-primary mt-2 w-100" 
+    (click)="addCharacter()">
+    Add
+  </button>
+</div>
